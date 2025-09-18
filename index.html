@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Schedule</title>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="container2">
+        <div class="title1"><h1 class="">Schedule Todo List</h1></div>
+        <form action="">
+          <div class="container3">
+            <div class="container-todo">
+              <input class="input-todo" type="text" placeholder="Add a todo" />
+            </div>
+            <div class="container-todo">
+              <input class="input-date" type="date" />
+            </div>
+            <div class="">
+              <button type="submit" class="btn-add-todo">+</button>
+            </div>
+          </div>
+        </form>
+        <div class="container4">
+          <div class="">
+            <div class="">
+              <button type="button" class="btn-filter">FILTER</button>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <button type="button" class="btn-delete-all">DELETE ALL</button>
+            </div>
+          </div>
+        </div>
+        <div class="container5">
+          <table class="todo-table">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <!-- Edit Modal -->
+        <div id="editModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Task</h2>
+            <form id="editForm">
+              <div class="container-edit-form">
+                <div class="form-edit-task">
+                  <div class="">
+                    <label for="editTask">Task:</label>
+                  </div>
+                  <div class="">
+                    <input type="text" id="editTask" required />
+                  </div>
+                </div>
+                <div>
+                  <label for="editDate">Date:</label>
+                  <input type="date" id="editDate" required />
+                </div>
+              </div>
+              <button type="submit" class="btn-save">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
