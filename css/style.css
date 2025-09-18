@@ -73,7 +73,7 @@
   color: white;
 }
 
-.btn-add-todo {
+.btn-add-todo, .btn-save {
   height: 5.4vh;
   width: 5.4vh;
   background-color: #1d3557;
@@ -81,6 +81,12 @@
   border-radius: 8px;
   font-size: 25px;
   border: none;
+}
+
+.btn-save{
+  font-size: 12px;
+  height: 5.4vh;
+  width: 8.4vh;
 }
 
 .btn-add-todo:hover,
@@ -174,7 +180,11 @@ th {
   font-weight: bold;
 }
 
-.container-edit-form {
+.form-edit{
+  display: flex;
+  justify-content: space-between;
+  gap: 1vh;
+  width: 100%;
 }
 
 .modal {
@@ -190,11 +200,11 @@ th {
 
 .modal-content {
   background: #a8dadc;
-  margin: 10% auto;
+  margin: 20% auto;
   padding: 20px;
   border-radius: 5px;
   width: 100vh;
-  height: 50vh;
+  height: 15vh;
 }
 .modal-content h2 {
   text-align: center;

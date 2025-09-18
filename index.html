@@ -55,20 +55,18 @@
             <h2>Edit Task</h2>
             <form id="editForm">
               <div class="container-edit-form">
-                <div class="form-edit-task">
+                <div class="form-edit">
                   <div class="">
-                    <label for="editTask">Task:</label>
+                    <input class="input-todo" type="text" id="editTask" required />
                   </div>
                   <div class="">
-                    <input type="text" id="editTask" required />
+                    <input class="input-date" type="date" id="editDate" required />
                   </div>
-                </div>
-                <div>
-                  <label for="editDate">Date:</label>
-                  <input type="date" id="editDate" required />
+                  <div class="">
+                    <button type="submit" class="btn-save">Save</button>
+                  </div>
                 </div>
               </div>
-              <button type="submit" class="btn-save">Save</button>
             </form>
           </div>
         </div>
